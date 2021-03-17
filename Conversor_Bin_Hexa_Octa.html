@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numérico</title>
+</head>
+
+<body>
+    <div style="background-color: rgb(184, 247, 14); text-align: center; width: 100%; height: 100%;">
+        <h1 style="font-family: fantasy; text-align: center; ">CONVERSOR NUMÉRICO</h1>
+
+        <p><b><u> Numero Decimal:</b></u></p>
+        <input id="Decimal1" placeholder="Decimal">
+
+
+
+        <br><br><b><u> Resultado da Conversão:</b></u><br>
+
+        <br> Octal: <br>
+        <div id="Octal"></div>
+        <br> Hexadecimal: <br>
+        <div id="Hexadecimal"></div>
+        <br> Binário: <br>
+        <div id="Binario"> </div> <br>
+
+
+        <button onclick="octal()">OCTAL</button>
+        <button onclick="hexa()">HEXADECIMAL</button>
+        <button onclick="binario()">BINÁRIO</button>
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    function octal() {
+        let Decimal = Number(Decimal1.value);
+        let passar_octal = Decimal.toString(8);
+        Octal.innerHTML = `${passar_octal}`;
+    }
+    function hexa() {
+        let Decimal = Number(Decimal1.value);
+        let passar_hexa = Decimal.toString(16);
+        Hexadecimal.innerHTML = `${passar_hexa}`;
+    }
+    function binario() {
+        let Decimal = Number(Decimal1.value);
+        let passar_binario = Decimal.toString(2);
+        Binario.innerHTML = `${passar_binario}`;
+    }
+</script>

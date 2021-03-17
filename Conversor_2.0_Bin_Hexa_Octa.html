@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numérico 2.0</title>
+</head>
+
+<body
+    style="background-image: url(https://image.freepik.com/fotos-gratis/quadro-negro-inscrito-com-formulas-e-calculos-cientificos_1150-19413.jpg);">
+    <center>
+        <div style="background-color: rgb(196, 149, 48); width: 58%;"><br>
+            <div
+                style="background-color: rgb(12, 95, 12); text-align: center; width: 94%; height: 100%; border-radius: 5px;">
+                <h1 style="font-family: fantasy; text-align: center; "><u>CONVERSOR NUMÉRICO</u></h1>
+
+                <p><b><u> Número Decimal:</b></u></p>
+                <input style="background-color: darkolivegreen;" id="Decimal1" placeholder="Número Decimal"><button
+                    onclick="limpar()" style="background-color: darkolivegreen;">Limpar</button>
+
+
+
+                <br><br><b><u> Resultado da Conversão:</b></u><br>
+
+                <br> Octal: <br>
+                <div id="Octal"></div>
+                <br> Hexadecimal: <br>
+                <div id="Hexadecimal"></div>
+                <br> Binário: <br>
+                <div id="Binario"> </div> <br>
+
+
+                <button style="border-radius: 5px; background-color: darkolivegreen; " onclick="octal()">OCTAL</button>
+                <button style="border-radius: 5px; background-color: darkolivegreen; "
+                    onclick="hexa()">HEXADECIMAL</button>
+                <button style="border-radius: 5px; background-color: darkolivegreen; "
+                    onclick="binario()">BINÁRIO</button><br>
+
+            </div>
+            <br><br>
+        </div>
+    </center>
+</body>
+
+</html>
+<script>
+
+    function octal() {
+        let Decimal = Number(Decimal1.value);
+        let passar_octal = Decimal.toString(8);
+        Octal.innerHTML = `<b style="color: rgb(148, 216, 31);">${passar_octal}</b>`;
+    }
+    function hexa() {
+        let Decimal = Number(Decimal1.value);
+        let passar_hexa = Decimal.toString(16);
+        Hexadecimal.innerHTML = `<b style="color: rgb(148, 216, 31);">${passar_hexa.toUpperCase()}</b>`;
+    }
+    function binario() {
+        let Decimal = Number(Decimal1.value);
+        let passar_binario = Decimal.toString(2);
+        Binario.innerHTML = `<b style="color: rgb(148, 216, 31);">${passar_binario}</b>`;
+    }
+
+    function limpar() {
+        Binario.innerHTML = ''
+        Hexadecimal.innerHTML = ''
+        Octal.innerHTML = ''
+    }
+</script>
