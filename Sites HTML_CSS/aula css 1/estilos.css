@@ -1,0 +1,11 @@
+.destaque {
+    font-size: 40px;
+    color: aqua
+}
+
+p {
+    color: blue;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 900
+}

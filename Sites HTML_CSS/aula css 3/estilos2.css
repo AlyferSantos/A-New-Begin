@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid orangered;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* padding: 10px 0 5px 0; Para top right bottom  esquerda*/ 
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+}
+
+.navtitulo{
+    float: left;
+    margin: 0px;
+}
+
+.navbar li {
+    float:left;
+    margin-left: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar li:hover{
+    color: orangered;
+    transition: all 600ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px orangered;
+    background-color: transparent;
+   }
+
+.destaque{
+    color: orangered;
+}
+
+.banner{
+ text-align: center;
+background-image: url(img/office.jpg);
+background-color:grey;
+background-repeat: no-repeat;
+background-size: cover;
+height: 225px;
+}
+
+.banner h1{
+    margin:0;
+    font-size: 40px;
+    padding-top: 39px;
+}
+
+.saiba-mais button {
+border: 0;
+background-color: orangered;
+color: white;
+text-transform: uppercase;
+padding: 10px 30px;
+margin-top: 18px;
+border-radius: 25px;
+}
+
+.saiba-mais{
+text-align: center;
+background-color: black;
+height: 70px;
+}
+
+.saiba-mais button:hover{
+    border-radius: 0px;
+    transition: all 600ms;
+    cursor:pointer;
+    box-shadow: 0px 0px 30px orangered;
+}
+
+
+   /* MISSAO VISAO VALORES */
+
+   .box img{
+       height: 100px;
+   }
+
+   .box {
+       overflow: auto;
+   }
+
+   .box-item {
+float: left;
+text-align: center;
+width: 29.3%;
+padding: 2%;
+}
+
+.footer {
+    text-align: center;
+    background-color: orangered;
+    height: 80px;
+}
+
+.footer h3 {
+    margin: 0;
+    padding-top: 33px;
+    font-weight: 100;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+}

@@ -1,0 +1,43 @@
+.header {
+    background-color: black;
+    color: white;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding: 10px 0 5px 0; /* Para  */ 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border-bottom: 4px solid orangered;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+}
+
+.navtitulo{
+    float: left;
+    margin: 0px;
+}
+
+.navbar li {
+    float:left;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.navbar li:hover{
+    color: orangered;
+    transition: all 600ms
+   }
+
+.destaque{
+    color: orangered;
+}

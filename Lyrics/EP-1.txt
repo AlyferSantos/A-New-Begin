@@ -1,7 +1,6 @@
 ﻿<u>Hello World!</u>
 <h2><b>YEAR 0</b></h2>
 <br>
-mamacito hihihi
 
 <h2><b>NOBODY - NOTD, Catello</b></h2>
 <br>
